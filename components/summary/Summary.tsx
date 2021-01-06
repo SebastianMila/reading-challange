@@ -2,6 +2,7 @@ import React from "react";
 import {SummaryDTO} from "../../types/SummaryDTO";
 import SummaryTable from "./SummaryTable";
 import HistoryTable from "./HistoryTable";
+import Chart from "./Chart";
 
 export function Summary() {
 
@@ -16,6 +17,7 @@ export function Summary() {
             </article>
             <article>
                 <h2>Wykres</h2>
+                <Chart summaryData={summaryData}/>
             </article>
             <article>
                 <h2>Historia</h2>
