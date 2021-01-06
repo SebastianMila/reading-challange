@@ -14,3 +14,15 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.p-datatable-width-auto,
+.p-datatable-width-auto .p-datatable-wrapper {
+  width: fit-content;
+}
+.p-datatable-width-auto .p-paginator {
+  width: 100%;
+}
+
+.p-datatable-width-auto table {
+  width: auto;
+}

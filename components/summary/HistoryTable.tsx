@@ -6,7 +6,7 @@ import moment from "moment";
 
 export default function HistoryTable({summaryData}: { summaryData: SummaryDTO[] }) {
 
-    const readers = summaryData.map(d => <Column key={d.reader} field={d.reader} header={d.reader}/>);
+    const readers = summaryData.map(d => <Column key={d.reader} field={d.reader} header={d.reader} style={{width: '200px'}}/>);
 
     let firstDay = null;
     let lastDay = null;
@@ -41,8 +41,8 @@ export default function HistoryTable({summaryData}: { summaryData: SummaryDTO[] 
         }
     }
 
-    return <DataTable value={data} paginator rows={7} className='p-datatable-sm'>
-        <Column field='day' header='Data'/>
+    return <DataTable value={data} paginator rows={7} className='p-datatable-sm p-datatable-width-auto'>
+        <Column field='day' header='Data' style={{width: '160px'}}/>
         {readers}
     </DataTable>
 }

@@ -15,9 +15,10 @@ export function Summary() {
                 <SummaryTable summaryData={summaryData}/>
             </article>
             <article>
-                WYKRES
+                <h2>Wykres</h2>
             </article>
             <article>
+                <h2>Historia</h2>
                 <HistoryTable summaryData={summaryData}/>
             </article>
         </section>

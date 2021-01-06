@@ -9,7 +9,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main style={{padding: '16px'}}>
         <Summary/>
       </main>
 
